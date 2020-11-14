@@ -1,0 +1,19 @@
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#gallery {
+  display: flex;
+}
+
+#gallery li {
+  height: 300px;
+  width: 500px;
+  list-style: none;
+}
+
+#gallery li:not(:last-child) {
+  margin-right: 30px;
+}
