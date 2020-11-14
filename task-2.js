@@ -1,43 +1,41 @@
-// Write code under this line
-import users from './users.js';
-const getUsersWithEyeColor = (array, color) => array.filter(({eyeColor}) => eyeColor === color);
+const ingredients = [
+  'Картошка',
+  'Грибы',
+  'Чеснок',
+  'Помидоры',
+  'Зелень',
+  'Приправы',
+];
 
- console.log(getUsersWithEyeColor(users, 'blue'));
-/* [
-  {
-    id: "701b29c3-b35d-4cf1-a5f6-8b12b29a5081",
-    name: "Moore Hensley",
-    email: "moorehensley@indexia.com",
-    eyeColor: "blue",
-    friends: ["Sharron Pace"],
-    isActive: false,
-    balance: 2811,
-    skills: ["ipsum", "lorem"],
-    gender: "male",
-    age: 37,
-  },
-  {
-    id: "7a3cbd18-57a1-4534-8e12-1caad921bda1",
-    name: "Sharlene Bush",
-    email: "sharlenebush@tubesys.com",
-    eyeColor: "blue",
-    friends: ["Briana Decker", "Sharron Pace"],
-    isActive: true,
-    balance: 3821,
-    skills: ["tempor", "mollit", "commodo", "veniam", "laborum"],
-    gender: "female",
-    age: 34,
-  },
-  {
-    id: "334f8cb3-eb04-45e6-abf4-4935dd439b70",
-    name: "Carey Barr",
-    email: "careybarr@nurali.com",
-    eyeColor: "blue",
-    friends: ["Jordan Sampson", "Eddie Strong"],
-    isActive: true,
-    balance: 3951,
-    skills: ["ex", "culpa", "nostrud"],
-    gender: "male",
-    age: 27,
-  }
-] */
+// ingredients.forEach(function(item) {const itemRef = document.createElement('li');
+// console.log(itemRef)
+//   itemRef.textContent = item
+// return itemRef})
+
+const itemPotatoRef = document.createElement('li')
+itemPotatoRef.textContent = ingredients[0]
+console.log(itemPotatoRef)
+
+const itemMushroomsRef = document.createElement('li')
+itemMushroomsRef.textContent = ingredients[1]
+console.log(itemMushroomsRef)
+
+const itemGarlicRef = document.createElement('li')
+itemGarlicRef.textContent = ingredients[2]
+console.log(itemGarlicRef)
+
+const itemTomatoesRef = document.createElement('li')
+itemTomatoesRef.textContent = ingredients[3]
+console.log(itemTomatoesRef)
+
+const itemGreensRef = document.createElement('li')
+itemGreensRef.textContent = ingredients[4]
+console.log(itemGreensRef)
+
+const itemCondimentsRef = document.createElement('li')
+itemCondimentsRef.textContent = ingredients[5]
+console.log(itemCondimentsRef)
+
+const listRef = document.querySelector('#ingredients')
+console.log(listRef)
+listRef.append(itemPotatoRef,itemMushroomsRef,itemGarlicRef,itemTomatoesRef,itemGreensRef,itemCondimentsRef)
