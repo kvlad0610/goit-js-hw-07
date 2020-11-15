@@ -1,7 +1,10 @@
-import users from './users.js';
-// Write code under this line
- const calculateTotalBalance = array => array.reduce((totalBalance, {balance}) => totalBalance + balance, 0) ;
+const inputRef = document.querySelector('#font-size-control');
+const textRef = document.querySelector('#text');
 
- console.log(calculateTotalBalance(users)); 
-// 20916
+console.dir(inputRef);
+console.log(textRef);
 
+inputRef.addEventListener('input', event => {
+  // console.log(event.target.valueAsNumber);
+  textRef.style.fontSize = `${event.target.valueAsNumber}px` ;
+})
