@@ -9,12 +9,12 @@ const btnIncrementRef=document.querySelector('button[data-action="increment"]');
 btnDecrementRef.addEventListener('click', () => {
   if(counterValue>0){
   counterValue -= 1;
-  // console.log(counterValue)
-  valueRef.textContent = counterValue;}
+    valueRef.textContent = counterValue;
+    console.log(valueRef.textContent);}
 })
 
 btnIncrementRef.addEventListener('click', () => {
   counterValue += 1;
-  // console.log(counterValue)
   valueRef.textContent = counterValue;
+  console.log(valueRef.textContent);
 })

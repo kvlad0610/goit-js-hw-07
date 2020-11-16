@@ -5,4 +5,5 @@ inputRef.addEventListener('input', inputEvent);
 
 function inputEvent(event) {
   inputRef.value ? spanRef.textContent = event.target.value : spanRef.textContent = 'незнакомец';
+  console.log(spanRef.textContent);
 };
