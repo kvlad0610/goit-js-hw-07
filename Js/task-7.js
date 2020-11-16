@@ -6,5 +6,6 @@ console.log(textRef);
 
 inputRef.addEventListener('input', event => {
   // console.log(event.target.valueAsNumber);
-  textRef.style.fontSize = `${event.target.valueAsNumber}px` ;
+  textRef.style.fontSize = `${event.target.valueAsNumber}px`;
+  console.log(textRef.style.fontSize);
 })
